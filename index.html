@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<!-- <html lang="en"> -->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- 动态鱼特效      样式-->
+    <style>
+        .container {
+            width: 100%;
+            height: 200px;
+            /* position: fixed; */
+            position: absolute;
+            /* margin-top: 2000px; */
+            top: 200px;
+            z-index: -1;
+            opacity: 1;
+            bottom: 0;
+            left: 0;
+            z-index: 11;
+            background-image: url('./images/preview.jpg');
+        }
+    </style>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+</head>
+
+<body>
+    <!-- 首页图片轮播-->
+    <div id="mainad">
+        <div class="wrap">
+            <div class="banner_box">
+                <div id="slide_banner">
+                    <!-- <img src="./images/aerial_image1.jpg" alt="" id="img"> -->
+                    <div class="pic"><img src="./images/index_nav_aerial_image1.jpg" width="1513px" height="900px" />
+                    </div>
+                    <div class="pic"><img src="./images/index_nav_aerial_image2.jpg" width="1513px" height="900px" />
+                    </div>
+                    <div class="pic"><img src="./images/index_nav_aerial_image3.jpg" width="1513px" height="900px" />
+                    </div>
+                    <div class="pic"><img src="./images/index_nav_aerial_image4.jpg" width="1513px" height="900px" />
+                    </div>
+                    <div class="pic"><img src="./images/index_nav_peach.jpg" width="1468px" height="900px" /></div>
+                    <a href="javascript:;" class="prev"></a>
+                    <a href="javascript:;" class="next"></a>
+                    <ul class="banner_btn">
+                        <li class="btn_active"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 顶部导航栏 -->
+    <div id="header" alt="顶部导航">
+        <div id="mainnav">
+            <h1>
+                <!-- <a href="./brandstory.html"><img src="./images/logo-xiaozhai.png" alt="" width="76px" height="50px" style="float: left;margin-left: 40px;"></a> -->
+            </h1>
+            <div class="logn-info" style="float: left;font-size: 25px;color: black;line-height: 50px;margin-left: 40px;"><span style="font-weight: 600;">秦安在线</span><!--<span style="color: skyblue;font-family: 华文新魏;font-size: 28px;">优品</span>-->
+            </div>
+            <div id="mainnav_wenzi">
+                <ul>
+                    <li class="a1" style="border-bottom: 3px solid rgb(46, 106, 245);"><a href="./index.html">首页</a></li>
+                    <li class="a1"><a href="./e-commerce.html">电商发展</a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a href="./e-commerce.html">电商之路</a></li>
+                                <li><a href="./e-commerce-current.html">电商现状</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="a1"><a href="./e-company.html">电商企业</a>
+                        <!-- <div class="dropdown-menu">
+                            <ul>
+                                <li><a href="./sc-dadiwan.html">大地湾文化</a></li>
+                                <li><a href="./sc-fuxi.html">伏羲文化</a></li>
+                                <li><a href="./sc-yangshao.html">仰韶文化</a></li>
+                                <li><a href="./sc-taohuahui.html">桃花会</a></li>
+                            </ul>
+                        </div> -->
+                    </li>
+                    <li class="a1"><a href="./goods.html">精选产品</a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a href="./goods.html">秦安蜜桃</a></li>
+                                <li><a href="./goods-apple.html">花牛苹果</a></li>
+                                <li><a href="./goods-pepper.html">秦安花椒</a></li>
+                                <li><a href="./goods-p-cucumber.html">秦安白脆瓜</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="a1"><a href="./contact-us.html">关于我们</a></li>
+                </ul>
+            </div>
+            <div id="mainnav_search">
+                <form action="">
+                    <input type="text" placeholder="&nbsp;搜索">
+                    <button></button>
+                </form>
+            </div>
+            <div id="miannav_language">
+                <span></span>
+                <a href="">中</a>
+                <span>/</span>
+                <a href="">English</a>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- 主体内容 -->
+    <div id="content">
+        <!-- 特色文化 -->
+        <div id="special-culture">
+            <div class="slogn">
+                <p style="margin-left: 30px;">电商企业</p>
+                <p style="font-size: 15px;margin-top: 10px;margin-left: 30px;color: grey;">紧跟时代潮流，做秦安电商的先驱者</p>
+            </div>
+            <div class="sp">
+                <div class="sp-detail">
+                    <a href="./e-company-guojiazhen.html">
+                    <div class="sp-detail-info1" ><span style="writing-mode:vertical-rl;font-size: 20px;transform: translateY(75%);margin-right: 35px;font-family:楷体;"></span></div>
+                    <img src="./images/guojiazhen.png" alt="" >
+                        <a href="./e-company-guojiazhen.html">
+                            <div class="company_name">
+                                <span>郭嘉镇电商直播基地</span>
+                            </div>
+                        </a>
+                    </a>
+                </div>
+                <div class="sp-detail">
+                    <a href="./e-company-liuping.html">
+                    <div class="sp-detail-info1"><span style="writing-mode:vertical-rl;font-size: 20px;transform: translateY(75%);margin-right: 35px;font-family:楷体;"></span></div>
+                    <img src="./images/liupingzhen.jpg" alt="">
+                    <a href="./e-company-liuping.html">
+                        <div class="company_name">
+                            <span>刘坪镇集体经济发展中心</span>
+                        </div>
+                    </a>
+                    </a>
+                </div>
+                <div class="sp-detail">
+                    <a href="./e-company-xiaozhai.html">
+                    <div class="sp-detail-info1"><span style="writing-mode:vertical-rl;font-size: 20px;transform: translateY(75%);margin-right: 35px;font-family:楷体;"></span></div>
+                    <img src="./images/xiaozhaiyoupin.jpg" alt="">
+                    <a href="./e-company-xiaozhai.html">
+                        <div class="company_name">
+                            <span>小寨村种植农民专业合作社</span>
+                        </div>
+                    </a>
+                    </a>
+                </div>
+                <div class="sp-detail">
+                    <a href="./e-company-yuanjuxiang.html">
+                    <div class="sp-detail-info1"><span style="writing-mode:vertical-rl;font-size: 20px;transform: translateY(75%);margin-right: 35px;font-family:楷体;"></span></div>
+                    <img src="./images/yuanjuxiang.png" alt="">
+                    <a href="./e-company-yuanjuxiang.html">
+                        <div class="company_name">
+                            <span>甘肃省源菊香农业发展有限公司</span>
+                        </div>
+                    </a>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- 精选产品 -->
+        <div id="jingxuan-goods">
+            <div class="slogn">
+                <p style="margin-left: 30px;">精选产品</p>
+                <p style="font-size: 15px;margin-top: 10px;margin-left: 30px;color: grey;">秦安当地特色产品，为您带来不一样的美食体验</p>
+            </div>
+            <div class="goods">
+                <div class="goods-detail">
+                    <a href="./goods.html">
+                        <img src="./images/goods_peach6.jpg" alt="">
+                        <div class="goods-detail-info">
+                            <!-- <img src="./images/index_goods_img1_up.png" alt="" width="265px" > -->
+                            <p >秦安蜜桃</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="goods-detail">
+                    <a href="./goods-apple.html">
+                        <img src="./images/goods_apple4.jpg" alt="">
+                        <div class="goods-detail-info">
+                            <!-- <img src="./images/index_goods_img2_up.png" alt="" width="265px" height="40px"> -->
+                            <p>花牛苹果</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="goods-detail">
+                    <a href="./goods-pepper.html">
+                        <img src="./images/goods_pepper11.jpg" alt="" style="transform: rotate(180deg);">
+                        <div class="goods-detail-info">
+                            <!-- <img src="./images/index_goods_img1_up.png" alt="" width="265px" height="40px"> -->
+                        <p>秦安花椒</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="goods-detail">
+                    <a href="./goods-p-cucumber.html">
+                        <img src="./images/goods_p_cucumber3.jpg" alt="">
+                        <div class="goods-detail-info">
+                            <!-- <img src="./images/index_goods_img1_up.png" alt="" width="265px" height="40px"> -->
+                        <p>秦安白脆瓜</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- 相关资讯 -->
+        <div id="relavant-news">
+            <div class="slogn">
+                <p style="margin-left: 30px;">相关资讯</p>
+                <p style="font-size: 15px;margin-top: 10px;margin-left: 30px;color: grey;">每日更新，为您实时解读当地发展最新快讯</p>
+            </div>
+            <div class="news">
+                <div class="product-news">
+                    <div class="aspect">产品资讯</div>
+                    <div class="news-content">
+                        <div class="news-content-item">
+                            <a href="https://mp.weixin.qq.com/s/49gf_GQndJjlY9Zq9BwvVg" target="_blank">
+                                <div class="news-title">
+                                    <text>秦安果韵 ：“北京七号”蜜桃影像集 (一)</text>
+                                </div> 
+                                <div class="news-time" >2024-07-31</div>                                                  
+                                <!-- <div class="news-introduce">中新网兰州7月10日电 (记者 丁思)10日，为期5天的第30届中国兰州投资贸易洽谈会(以下简称“兰洽会”)落下帷幕。本届兰洽会期间共签约合同项目1325个、总额6039.55亿元，较上届分别增长13</div> -->
+                            </a>
+                        </div>
+                        <div class="news-content-item">
+                            <a href="https://mp.weixin.qq.com/s/-zF8GkmC7YksH-yAWRMF7A" target="_blank">
+                                <div class="news-title">
+                                    <text>秦安：17.5万亩花椒陆续成熟进入采摘期</text>
+                                </div> 
+                                <div class="news-time" >2024-07-29</div>                                                  
+                                <!-- <div class="news-introduce">中新网兰州7月10日电 (记者 丁思)10日，为期5天的第30届中国兰州投资贸易洽谈会(以下简称“兰洽会”)落下帷幕。本届兰洽会期间共签约合同项目1325个、总额6039.55亿元，较上届分别增长13</div> -->
+                            </a>
+                        </div>
+                        <div class="news-content-item">
+                            <a href="https://mp.weixin.qq.com/s/8ks0jdXKuwNQeteXGtT8ag" target="_blank">
+                                <div class="news-title">
+                                    <text>秦安：中华名果“北京七号”蜜桃甜蜜上市</text>
+                                </div> 
+                                <div class="news-time" >2024-07-25</div>                                                  
+                                <!-- <div class="news-introduce">中新网兰州7月10日电 (记者 丁思)10日，为期5天的第30届中国兰州投资贸易洽谈会(以下简称“兰洽会”)落下帷幕。本届兰洽会期间共签约合同项目1325个、总额6039.55亿元，较上届分别增长13</div> -->
+                            </a>
+                        </div>
+                        <div class="news-content-item">
+                            <a href="https://mp.weixin.qq.com/s/nnhvGSavCUUipIdPUahqAg" target="_blank">
+                                <div class="news-title">
+                                    <text>网红达人助力秦安蜜桃宣传推介</text>
+                                </div> 
+                                <div class="news-time" >2024-07-19</div>                                                  
+                                <!-- <div class="news-introduce">中新网兰州7月10日电 (记者 丁思)10日，为期5天的第30届中国兰州投资贸易洽谈会(以下简称“兰洽会”)落下帷幕。本届兰洽会期间共签约合同项目1325个、总额6039.55亿元，较上届分别增长13</div> -->
+                            </a>
+                        </div>
+                        <div class="news-content-item">
+                            <a href="https://mp.weixin.qq.com/s/Fn-WBpGYG4ityZ8yAnTR_g" target="_blank">
+                                <div class="news-title">
+                                    <text>首次海运全程冷链 秦安2100件蜜桃出口新加坡</text>
+                                </div> 
+                                <div class="news-time" >2024-07-18</div>                                                  
+                                <!-- <div class="news-introduce">中新网兰州7月10日电 (记者 丁思)10日，为期5天的第30届中国兰州投资贸易洽谈会(以下简称“兰洽会”)落下帷幕。本届兰洽会期间共签约合同项目1325个、总额6039.55亿元，较上届分别增长13</div> -->
+                            </a>
+                        </div>
+                        <div class="news-content-item">
+                            <a href="https://mp.weixin.qq.com/s/UeipkalN-z9LrbSyKRBA1w" target="_blank">
+                                <div class="news-title">
+                                    <text>秦安蜜桃上榜2024年国家级地理标志保护工程实施名单</text>
+                                </div> 
+                                <div class="news-time" >2024-07-15</div>                                                  
+                                <!-- <div class="news-introduce">中新网兰州7月10日电 (记者 丁思)10日，为期5天的第30届中国兰州投资贸易洽谈会(以下简称“兰洽会”)落下帷幕。本届兰洽会期间共签约合同项目1325个、总额6039.55亿元，较上届分别增长13</div> -->
+                            </a>
+                        </div>
+                        <div class="news-content-item">
+                            <a href="https://mp.weixin.qq.com/s/-GfQbEdFDoLLpwyRNkLa7g" target="_blank">
+                                <div class="news-title">
+                                    <text>熟啦！甜呀！美滴很🤤🤤🤤</text>
+                                </div> 
+                                <div class="news-time" >2024-07-11</div>                                                  
+                                <!-- <div class="news-introduce">中新网兰州7月10日电 (记者 丁思)10日，为期5天的第30届中国兰州投资贸易洽谈会(以下简称“兰洽会”)落下帷幕。本届兰洽会期间共签约合同项目1325个、总额6039.55亿元，较上届分别增长13</div> -->
+                            </a>
+                        </div>
+                        <div class="news-content-item">
+                            <a href="https://mp.weixin.qq.com/s/XG6gDUvvW8onPyPXc-B0Sw" target="_blank">
+                                <div class="news-title">
+                                    <text>秦安蜜桃熟了（组图）</text>
+                                </div> 
+                                <div class="news-time" >2024-07-10</div>                                                  
+                                <!-- <div class="news-introduce">中新网兰州7月10日电 (记者 丁思)10日，为期5天的第30届中国兰州投资贸易洽谈会(以下简称“兰洽会”)落下帷幕。本届兰洽会期间共签约合同项目1325个、总额6039.55亿元，较上届分别增长13</div> -->
+                            </a>
+                        </div>
+                        <div class="news-content-item">
+                            <a href="https://mp.weixin.qq.com/s/iIaShTe9buB22deR5ZfrPA" target="_blank">
+                                <div class="news-title">
+                                    <text>清甜爽脆！欢迎来秦安过桃子味的夏天！</text>
+                                </div> 
+                                <div class="news-time" >2024-07-04</div>                                                  
+                                <!-- <div class="news-introduce">中新网兰州7月10日电 (记者 丁思)10日，为期5天的第30届中国兰州投资贸易洽谈会(以下简称“兰洽会”)落下帷幕。本届兰洽会期间共签约合同项目1325个、总额6039.55亿元，较上届分别增长13</div> -->
+                            </a>
+                        </div>
+                        <div class="news-content-item">
+                                <div class="news-title">
+                                    <text>……</text>
+                                </div> 
+                                <div class="news-time" ></div>                                                  
+                                <!-- <div class="news-introduce">中新网兰州7月10日电 (记者 丁思)10日，为期5天的第30届中国兰州投资贸易洽谈会(以下简称“兰洽会”)落下帷幕。本届兰洽会期间共签约合同项目1325个、总额6039.55亿元，较上届分别增长13</div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="culture-news">
+                    <div class="aspect">电商资讯</div>
+                    <div class="news-content">
+                        <div class="news-content-item">
+                            <a href="http://www.tianshui.com.cn/news/qa/2024081418555670014.htm" target="_blank">
+                                <div class="news-title">
+                                    <text>【人才风采录·电商人才】邵立胜：电商路上的“追梦人”</text>
+                                </div> 
+                                <div class="news-time" >2024-08-14</div>                                                  
+                                <!-- <div class="news-introduce">中新网兰州7月10日电 (记者 丁思)10日，为期5天的第30届中国兰州投资贸易洽谈会(以下简称“兰洽会”)落下帷幕。本届兰洽会期间共签约合同项目1325个、总额6039.55亿元，较上届分别增长13</div> -->
+                            </a>
+                        </div>
+                        <div class="news-content-item">
+                            <a href="http://www.tianshui.com.cn/news/qa/2024080316390560367.htm" target="_blank">
+                                <div class="news-title">
+                                    <text>秦安十年电商路探索、成长、蜕变</text>
+                                </div> 
+                                <div class="news-time" >2024-08-03</div>                                                  
+                                <!-- <div class="news-introduce">中新网兰州7月10日电 (记者 丁思)10日，为期5天的第30届中国兰州投资贸易洽谈会(以下简称“兰洽会”)落下帷幕。本届兰洽会期间共签约合同项目1325个、总额6039.55亿元，较上届分别增长13</div> -->
+                            </a>
+                        </div>
+                        <div class="news-content-item">
+                            <a href="https://www.sohu.com/a/798288684 121885028" target="_blank">
+                                <div class="news-title">
+                                    <text>秦安电商十年蝶变：从田间到云端的财富密码</text>
+                                </div> 
+                                <div class="news-time" >2024-08-03</div>                                                  
+                                <!-- <div class="news-introduce">中新网兰州7月10日电 (记者 丁思)10日，为期5天的第30届中国兰州投资贸易洽谈会(以下简称“兰洽会”)落下帷幕。本届兰洽会期间共签约合同项目1325个、总额6039.55亿元，较上届分别增长13</div> -->
+                            </a>
+                        </div>
+                        <div class="news-content-item">
+                            <a href="https://gansu.gscn.com.cn/system/2024/07/13/013170511.shtml" target="_blank">
+                                <div class="news-title">
+                                    <text>电商直播助力秦安蜜桃“云端”俏销</text>
+                                </div> 
+                                <div class="news-time" >2024-07-13</div>                                                  
+                                <!-- <div class="news-introduce">中新网兰州7月10日电 (记者 丁思)10日，为期5天的第30届中国兰州投资贸易洽谈会(以下简称“兰洽会”)落下帷幕。本届兰洽会期间共签约合同项目1325个、总额6039.55亿元，较上届分别增长13</div> -->
+                            </a>
+                        </div>
+                        <div class="news-content-item">
+                            <a href="https://www.sohu.com/a/309024774 423092" target="_blank">
+                                <div class="news-title">
+                                    <text>大地之湾·佳果秦安电商平台开通运行</text>
+                                </div> 
+                                <div class="news-time" >2019-04-19</div>                                                  
+                                <!-- <div class="news-introduce">中新网兰州7月10日电 (记者 丁思)10日，为期5天的第30届中国兰州投资贸易洽谈会(以下简称“兰洽会”)落下帷幕。本届兰洽会期间共签约合同项目1325个、总额6039.55亿元，较上届分别增长13</div> -->
+                            </a>
+                        </div>
+                        <div class="news-content-item">
+                            <a href="http://www.tianshui.com.cn/news/qa/2017112415134852457.htm" target="_blank">
+                                <div class="news-title">
+                                    <text>秦安首部电商扶贫题材微电影《e路桃红》首映</text>
+                                </div> 
+                                <div class="news-time" >2017-11-24</div>                                                  
+                                <!-- <div class="news-introduce">中新网兰州7月10日电 (记者 丁思)10日，为期5天的第30届中国兰州投资贸易洽谈会(以下简称“兰洽会”)落下帷幕。本届兰洽会期间共签约合同项目1325个、总额6039.55亿元，较上届分别增长13</div> -->
+                            </a>
+                        </div>
+                        <div class="news-content-item">
+                            <a href="https://www.sohu.com/a/195920603 715538" target="_blank">
+                                <div class="news-title">
+                                    <text>厉害了！我的大秦安！秦安电子商务成为脱贫攻坚新“引擎” </text>
+                                </div> 
+                                <div class="news-time" >2017-10-01</div>                                                  
+                                <!-- <div class="news-introduce">中新网兰州7月10日电 (记者 丁思)10日，为期5天的第30届中国兰州投资贸易洽谈会(以下简称“兰洽会”)落下帷幕。本届兰洽会期间共签约合同项目1325个、总额6039.55亿元，较上届分别增长13</div> -->
+                            </a>
+                        </div>
+                        <!-- <div class="news-content-item">
+                            <a href="https://www.gswbj.gov.cn/a/2022/06/22/14139.html" target="_blank">
+                                <div class="news-title">
+                                    <text>伏羲文化的历史传承和时代意义</text>
+                                </div> 
+                                <div class="news-time" >2022-06-22</div>                                                  
+                            </a>
+                        </div> -->
+                        <div class="news-content-item">
+                                <div class="news-title">
+                                    <text>……</text>
+                                </div> 
+                                <div class="news-time" ></div>                                                  
+                                <!-- <div class="news-introduce">中新网兰州7月10日电 (记者 丁思)10日，为期5天的第30届中国兰州投资贸易洽谈会(以下简称“兰洽会”)落下帷幕。本届兰洽会期间共签约合同项目1325个、总额6039.55亿元，较上届分别增长13</div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 网站底部           版权信息 -->
+    <div id="footer">
+        <div class="footer-up">
+            <div class="left-media">
+                <div class="media-info">
+                    <p>电商快讯</p>
+                </div>
+                <div class="media-info-iqcode">
+                    <img src="./images/footer-media-tianshui.jpg" alt="" width="150px" height="150px">
+                    <img src="./images/footer-media-qinan.jpg" alt="" width="150px" height="150px">
+                </div>
+            </div>
+            <div class="footer-up-right">
+                <div class="right-info-list">
+                    <div class="footer-detail">
+                        <p style="font-size: 20px;margin-top: 15px;color: white;">电商发展</p>
+                        <p style="margin-top: 20px;font-size: 16px;color: #f2f3f5;">电商之路</p>
+                        <p style="margin-top: 18px;font-size: 16px;color: #f2f3f5;">电商现状</p>
+                    </div>
+                    <div class="footer-detail">
+                        <p style="font-size: 20px;margin-top: 15px;color: white;">电商企业</p>
+                        <p style="margin-top: 20px;font-size: 16px;color: #f2f3f5;">郭嘉镇电商直播基地</p>
+                        <p style="margin-top: 18px;font-size: 16px;color: #f2f3f5;">刘坪镇集体经济发展中心</p>
+                        <p style="margin-top: 18px;font-size: 16px;color: #f2f3f5;">小寨村种植农民专业合作社</p>
+                        <p style="margin-top: 18px;font-size: 16px;color: #f2f3f5;">源菊香农业发展有限公司</p>
+                    </div>
+                    <div class="footer-detail">
+                        <p style="font-size: 20px;margin-top: 15px;color: white;">精选产品</p>
+                        <p style="margin-top: 20px;font-size: 16px;color: #f2f3f5;">秦安蜜桃</p>
+                        <p style="margin-top: 18px;font-size: 16px;color: #f2f3f5;">花牛苹果</p>
+                        <p style="margin-top: 18px;font-size: 16px;color: #f2f3f5;">秦安花椒</p>
+                        <p style="margin-top: 18px;font-size: 16px;color: #f2f3f5;">秦安白脆瓜</p>
+                    </div>
+                    <div class="footer-detail" style="border: 0;">
+                        <p style="font-size: 20px;margin-top: 15px;color: white;">关于我们</p>
+                        <p style="margin-top: 20px;font-size: 16px;color: #f2f3f5;">联系我们</p>
+                        <p style="margin-top: 18px;font-size: 16px;color: #f2f3f5;">平台运营</p>
+                        <p style="margin-top: 18px;font-size: 16px;color: #f2f3f5;">实践风采</p>
+                        <p style="margin-top: 18px;font-size: 16px;color: #f2f3f5;">团队合影</p>
+                    </div>
+                </div>
+                <div class="center-company-info-txt">
+                    <p style="line-height: 20px;"><span
+                            style="color: aliceblue;">秦安县商务局&nbsp;地址：甘肃省秦安县成纪大道15号；&nbsp;&nbsp;邮政编码：741600</span></p>
+                    <strong> <span style="color: aliceblue;line-height: 20px;"> 友情链接：</span></strong>
+                    <a href="http://www.qinan.gov.cn" target="_blank"
+                        style="color: aliceblue;"><strong><span>秦安县政府</span></strong></a>
+
+                    <p style="color: aliceblue;font-weight: 600;line-height: 20px;">免责声明：本网站部分素材来源于网络和秦安县融媒体</p>
+                </div>
+            </div>
+        
+        </div>
+        <div class="footer-down">
+            <div class="center-copyright-info">
+                <div class="teamname">
+                    <span>版权信息：本网站由北京科技大学鹿贝柯鹿鸣羲里实践队制作</span>
+                </div>
+                <div class="focus">
+                    <span>关注鹿鸣羲里实践队</span>
+                </div>
+                <div class="team-iqcode">
+                    <div class="item">
+                        <div class="icon1">
+                            <div id="code-box1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="icon2">
+                            <div id="code-box2">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="item">
+                        <div class="icon3">
+                            <div id="code-box3">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="item">
+                        <div class="icon4">
+                            <div id="code-box4">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="item">
+                        <div class="icon5">
+                            <div id="code-box5">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="item">
+                        <div class="icon6">
+                            <div id="code-box6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- js使用             动态鱼特效-->
+    <!-- <script>
+    window.onload = () =>{
+        RENDERER.init();
+    }
+</script> -->
+    <!-- js引入  -->
+    <script src="./js/renderer.js"></script>
+    <script src="./js/test.js"></script>
+    <!-- <script src="./js/index.js"></script> -->
+
+</body>
+
+</html>
